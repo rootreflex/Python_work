@@ -1,0 +1,20 @@
+name_test = ("Задача 1 - Организуйте программу: цифры")
+print(name_test)
+my_string_1= input('Введите любое число: ')
+datas= (len(my_string_1))
+print("Ваше число состоит из", datas, "цифр")
+# Конец задачи "Организуйте программу: цифры"
+name_test = ("Задача 1 - Организуйте программу: строки")
+print(name_test)
+my_string_2 = input('Введите любимую цитату: ')
+datas= (len(my_string_2))
+print("Ваша цитата состоит из", datas, "букв")
+#конец задачи "Организуйте программу: строки"
+print ("_____________________________")
+name_test = ("Задача 2 - Работа с методами строк:")
+print(name_test)
+print (my_string_2 .upper())
+print (my_string_2 .lower())
+print (my_string_2 .replace(' ',''))
+print (my_string_2 [-1] )
+#конец задачи "Работа с методами строк:"
