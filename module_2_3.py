@@ -71,8 +71,6 @@ my_list_2 = []
 my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
 while len(my_list) > len(my_list_2):
     my_list_nul = [0]
-    # my_list_2 = []
-    # my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
     print("Длина заданногосписка", (len(my_list)), "цифр")
     print(my_list)
     num = 0
