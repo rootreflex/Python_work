@@ -14,25 +14,28 @@ def chek_winner():
         return "X"
     if area[0][0] == "X" and area[1][1] == "X" and area[2][2] == "X":
         return "X"
-    if area[0][2] == "X" and area[2][1] == "X" and area[2][0] == "X":
+    if area[0][2] == "X" and area[2][0] == "X" and area[1][1] == "X":
         return "X"
+        if chek_winner() =="X":
+            print("Победа крестиков")
 
     if area[0][0] == "0" and area[0][1] == "0" and area[0][2] == "0":
         return "0"
     if area[1][0] == "0" and area[1][1] == "0" and area[1][2] == "0":
-        return "X"
-    if area[2][0] == "0" and area[2][1] == "0" and area[2][2] == "0":
-        return "X"
-    if area[0][0] == "0" and area[1][0] == "0" and area[2][0] == "0":
-        return "X"
-    if area[0][1] == "0" and area[1][1] == "0" and area[2][1] == "0":
-        return "X"
-    if area[0][2] == "0" and area[1][2] == "0" and area[2][2] == "0":
-        return "X"
-    if area[0][0] == "0" and area[1][1] == "0" and area[2][2] == "0":
-        return "X"
-    if area[0][2] == "0" and area[2][1] == "0" and area[2][0] == "0":
         return "0"
+    if area[2][0] == "0" and area[2][1] == "0" and area[2][2] == "0":
+        return "0"
+    if area[0][0] == "0" and area[1][0] == "0" and area[2][0] == "0":
+        return "0"
+    if area[0][1] == "0" and area[1][1] == "0" and area[2][1] == "0":
+        return "0"
+    if area[0][2] == "0" and area[1][2] == "0" and area[2][2] == "0":
+        return "0"
+    if area[0][0] == "0" and area[1][1] == "0" and area[2][2] == "0":
+        return "0"
+    if area[0][2] == "0" and area[2][0] == "0" and area[1][1] == "0":
+        return "0"
+
 def draw_area():
     for i in area:
         print(*i)
